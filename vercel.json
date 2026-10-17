@@ -1,0 +1,6 @@
+{
+  "functions": {
+    "api/*.py": { "maxDuration": 30 },
+    "api/pdfs/*.py": { "maxDuration": 30 }
+  }
+}
