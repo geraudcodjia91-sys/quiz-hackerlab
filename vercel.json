@@ -2,5 +2,10 @@
   "functions": {
     "api/*.py": { "maxDuration": 30 },
     "api/pdfs/*.py": { "maxDuration": 30 }
-  }
+  },
+  "routes": [
+    { "source": "/api/pdfs/(?<name>.*)", "destination": "/api/pdfs/[name].py" },
+    { "source": "/api/(.*)", "destination": "/api/$1.py" },
+    { "source": "/(.*)", "destination": "/$1" }
+  ]
 }
